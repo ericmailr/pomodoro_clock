@@ -11,19 +11,31 @@
  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
+
 <body>
-
-	<h1> Pomodoro Clock </h1>
-
-	<div id="clock-settings" class="clock">
-		<h3>Session</h3>
-		<h3>Break</h3>
-		<div>25</div>
-		<div>5</div>
-	</div>
-	
-	<div id="clock-display" class="clock">
-
-	</div>
+ <h1> Pomodoro Clock </h1>
+ <div id="container">
+ <div id="clock-settings" class="clock">
+   <div class="settings-block"><h3>Session</h3></div>  
+    <div class="settings-block"><h3>Break</h3></div>
+    <div class="settings-block"><button id="session-down">&#x25BC;</button> 
+    <p id="session-length">25</p>
+    <button id="session-up">&#x25B2;</button></div>
+    <div class="settings-block"><button id="break-down">&#x25BC;</button>
+    <p id="break-length">5</p>
+     <button id="break-up">&#x25B2;</button></div>   
+ </div>
+ 
+ <div id="clock-display" class="clock">
+  <div class="control"><button id="play">&#9654;</button></div>  
+    <div class="control"><button id="reset">&#10227;</button></div>  
+    <div class="clock-center">
+      <p id="time-label">-SESSION-</p>
+      <p id="time">00:03</p>   
+    </div>
+   <div class="control"><button id="pause">l l</button></div>   
+    <div class="control"><button id="stop">&#9632;</button></div>  
+ </div>
+</div>
 </body>
 </html>
